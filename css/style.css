@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  /*if no internet connection then it choose serif and if serif also not embedded in
+   system then it choose by default value which is present in system*/
+  font-size: 200%;
+  color: #40514E;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  /* if we set width of h1 tag then text-align center does not affect on h1 tag
+ so we set the h1 tag in center by using margin: 50px auto 0 auto; here auto means vertically and horizantally adjust in center */
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  /*when we use "em" or "%" then h1 font-size inherited with font-size of body and when it gets through the "h1"
+tag it is ready got that 2em applied and then it adds that 5.625em on top of the 2em  from(but it is not happened in the case of
+pixels because pixels is static )  and if both are in pixels then 'h1,s' font-size work here and 'body,s font-size' does not work
+***************its solution is we must use "rem(root em which is present on css3)" instead of "em" which means ignorre all of the
+parents settings of font-size**************/
+  color: #66BFBF;
+  /*line-height: 2; * it proide some space between top content and h1 tag similarly for bottom content and h1 tag */
+}
+
+h2 {
+  font-family: 'merriweather', serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+hr {
+  border-color: #EAF6F6;
+  border-width: 5px;
+  border-style: none;
+  border-top-style: dotted;
+  height: 0px;
+  width: 10%;
+  margin:100px auto;
+}
+p{
+  line-height: 2;
+}
+
+.top-container {
+  background-color: #EAF6F6;
+  position: relative;
+  /*if we not mention this point then "top-cloud and bottom-cloud class uses position with body of the page"*/
+  padding-top: 100px;
+}
+
+.middle-container {
+  /*  width: 200px;
+  height: 200px;
+  background-color: red;*/
+  padding: 100px 0;
+}                                 /*     1em=16px=100%   */
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding:50px 0 20px;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.contact{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+.pro {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 400px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 350px;
+  bottom: 300px;
+}
+
+.img {
+  height: 400px;
+  width: 400px;
+}
+
+a:link {
+  color: #11999E;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  /*line-height: 2;*/
+}
+
+.code-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.chillies {
+  width: 25%;
+  float: right;
+  /* is only used in wrapping text around certain element condition just like in this case for and  layout: margin and padding
+   position use  */
+  margin-left: 30px;
+}
+
+/* .code-skill{     **it is used for right the paragraph below the image and also search  google
+  clear: left;
+
+}
+.chillie{
+  clear: right;
+}*/
+.testbutton {                                /* for button use css3buttongenerator for a good buuton*/
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  text-shadow: 1px 1px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 10px 25px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #3866A3;
+  background: #63B8EE;
+  background: linear-gradient(top,  #11CDD4,  #11999E);
+  background: -ms-linear-gradient(top,  #11CDD4,  #11999E);
+  background: -webkit-gradient(linear, left top, left bottom, from(#11CDD4), to(#11999E));
+  background: -moz-linear-gradient(top,  #11CDD4,  #11999E);
+  text-decoration: none;
+}
+.testbutton:hover {
+  color: #14396A !important;
+  background: #468CCF;
+  background: linear-gradient(top,  #30E3CB,  #2bc4ad);
+  background: -ms-linear-gradient(top,  #30E3CB,  #2bc4ad);
+  background: -webkit-gradient(linear, left top, left bottom, from(#30E3CB), to(#2bc4ad));
+  background: -moz-linear-gradient(top,  #30E3CB,  #2bc4ad);
+}
+a{
+  font-family: 'Montserrat', sans-serif;
+   margin: 10px 20px;
+   text_direction: none;
+   color: #11999E;
+}
+a:hover{
+  color: #EAF6F6;
+}
+.copyright{
+  color: #EAF6F6;
+  font-size: 0.85rem;
+  padding:20px 0;
+}
